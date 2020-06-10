@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ex. 1° - Módulo 04 JS Assíncrono</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css"/>
+  </head>
+  <body id="myBody">
+    <div class="container">
+        <div class="title">
+            <h4>Skylab - (1° exercício) Módulo 04 | JS Assíncrono</h4>
+        </div>
+        <hr/>
+        <p>
+            - Crie uma tela com um <strong>< input ></strong> que deve receber o nome de um usuário no Github. Após digitar o
+            nome do usuário e clicar no botão buscar a aplicação deve buscar pela API do Github (conforme
+            URL abaixo) os dados de repositórios do usuário e mostrá-los em tela:<br><br>
+            URL de exemplo: <strong>https://api.github.com/users/diego3g/repos</strong><br><br>
+            Basta alterar <strong>"diego3g"</strong> pelo nome do usuário.
+        </p>
+        <fieldset>
+            <code>
+                <span class="varfct">&nbsp;< input</span>
+                <span class="nameObject">type="<span class="txtCode">text</span>"</span>  
+                <span class="nameObject">name="</span>
+                <span class="txtCode">user </span>            
+                <span class="nameObject">"</span>
+                <span class="varfct">></span> 
+                </span><br />
+            <span class="varfct">&nbsp;< button </span>
+            <span class="nameObject">
+                onClick="</span>
+                <span class="nameObject">"</span>
+                <span class="varfct">></span>
+                <span class="before">Adicionar
+                <span class="varfct">&nbsp;< /button > </span> </span><br />
+            </span>
+            </code>
+        </fieldset>
+        <p>
+          - Depois de preencher o input e adicionar, a seguinte lista deve aparecer abaixo:
+        </p>
+        <fieldset>
+            <code>
+                <span class="varfct">&nbsp;< ul ></span><br>
+                <span class="nameObject enbsp">< li ><span class="txtCode"> repo1</span>
+                <span class="nameObject">< /li ></li><br>
+                <span class="nameObject enbsp">< li ><span class="txtCode"> repo2</span>
+                <span class="nameObject">< /li ></li><br>
+                <span class="nameObject enbsp">< li ><span class="txtCode"> repo3</span>
+                <span class="nameObject">< /li ></li><br>
+                <span class="nameObject enbsp">< li ><span class="txtCode"> repo4</span>
+                <span class="nameObject">< /li ></li><br>
+                <span class="nameObject enbsp">< li ><span class="txtCode"> repo5</span>
+                <span class="nameObject">< /li ></li><br>
+                <span class="varfct">&nbsp;< /ul ></span><br>
+            </code>
+        </fieldset>     
+        <hr>
+        <p>Buscar com nome de usuário pela api do Github</p>   
+        <div class="row" id="atv2">
+
+        </div>
+        <hr>
+        <p>Seu resultado:</p>
+        <fieldset class="row" id="div1">
+            &nbsp;
+        </fieldset>
+    </div>
+  </body>
+  <footer id="footer-unset">
+    Resolução de Desafios de: Skylab Starter Rocketseat
+    <hr />
+  </footer>
+  <script src="ex2.js"></script>
+</html>
