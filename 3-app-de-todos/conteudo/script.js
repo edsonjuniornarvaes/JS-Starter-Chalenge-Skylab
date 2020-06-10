@@ -1,4 +1,4 @@
-let ulElement = document.querySelector("#app ul");
+let ulElement = document.querySelector("#app-1 ul");
 let inputElement = document.querySelector("#app input");
 let buttonElement = document.querySelector("#app button");
 
@@ -12,7 +12,7 @@ let renderTodos = () => {
     let todoText = document.createTextNode(todo);
     let aLink = document.createElement("a");
     aLink.setAttribute("href", "#");
-    let aTxt = document.createTextNode("Excluir");
+    let aTxt = document.createTextNode(" Excluir ");
     aLink.appendChild(aTxt);
     let pos = todos.indexOf(todo);
     aLink.setAttribute("onclick", `deleteTodo(${pos})`);
