@@ -22,7 +22,7 @@ fieldset {
     color: rgb(198, 170, 118);
 }
 
-.var {
+.varfct {
     color: rgb(214, 114, 114);
 }
 
@@ -34,7 +34,7 @@ fieldset {
     border-radius: 10px;
 }
 
-/* footer {
+footer {
     text-align: center;
     background: #545b620f;
     width: 100%;
@@ -42,7 +42,11 @@ fieldset {
     position: absolute;
     bottom: 0px;
     left: 0;
-} */
+}
+
+#footer-ex-5 {
+    position: unset;
+}
 
 button {
     margin-left: 5px!important;
@@ -51,6 +55,10 @@ button {
 .row {
     margin-bottom: 10px;
     margin-left: 0.1rem!important;
+}
+
+.enb {
+    margin-left: 0.5rem;
 }
 
 .enbsp {

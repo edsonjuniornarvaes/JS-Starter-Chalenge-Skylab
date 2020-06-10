@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>Ex. 1° - Módulo 04 | JS Assíncrono</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -11,4 +11,45 @@
     <script src="script.js"></script>
     <hr />
   </body>
+</html>
+
+<html>
+    <header>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css'/>
+    </header>
+    <body id="myBody">
+        <div class="container">
+            <div class="title">
+                <h4>JS Introdução - (1° exercício) Módulo 04 | JS Assíncrono</h4>
+            </div>
+            <hr>
+            <p>- Crie uma função que recebe a idade de um usuário e retorna uma Promise que depois de 2
+              segundos retornará se usuário é maior ou não que 18 anos. Se o usuário ter mais que 18 anos de
+              idade o resultado deve cair no <strong>.then</strong>, caso contrário, no <strong>.catch</strong></p>
+        
+            <fieldset>
+                <code>
+                    <span class="varfct">&nbsp;function</span> <span class="nameObject">checaIdade</span>(<span class="txtCode">idade</span>) {<br>
+                        <span class="before enbsp">// Retornar uma promise</span><br>
+                    &nbsp;};<br>
+                    <span class="nameObject enb">checaIdade</span>(<span class="txtCode">20</span>)
+                    <span class="nameObject enb">.then</span>(<span class="varfct">function()</span> {
+                      console.log("Maior que 18");
+                      })
+                      <span class="nameObject enb">.catch</span>(function() {
+                      console.log("Menor que 18");
+                    });
+                </code>
+            </fieldset>
+            <hr>
+            <p>Seu resultado:</p>   
+            <fieldset id="atv2">
+                &nbsp;
+            </fieldset>
+        </div>
+    </body>
+    <footer>Resolução de Desafios de: Skylab Starter Rocketseat<hr></footer>
+    <script src="ex2.js"></script>
 </html>
