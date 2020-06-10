@@ -44,7 +44,7 @@ footer {
     left: 0;
 }
 
-#footer-ex-5 {
+#footer-unset {
     position: unset;
 }
 
@@ -63,4 +63,8 @@ button {
 
 .enbsp {
     margin-left: 2rem;
+}
+
+.enbsp-2 {
+    margin-left: 4rem;
 }

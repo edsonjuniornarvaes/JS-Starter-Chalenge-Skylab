@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ex. 2° - Módulo 02 JS Manipulando a DOM</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css'/>
+    </head>
+    <body id="myBody">
+        <div class="container">
+            <div class="title">
+                <h4>Skylab - (2° exercício) Módulo 02 | JS Manipulando a DOM</h4>
+            </div>
+            <hr>
+            <p>
+                - Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de
+                algum quadrado troque sua cor para uma cor aleatória gerada pela função abaixo:
+            </p>
+            <fieldset>
+                <code>
+                    <span class="varfct">&nbsp;function</span> 
+                    <span class="nameObject">getRandomColor</span>() {<br>
+                    <span class="varfct enbsp">&nbsp;var</span> 
+                    <span class="nameObject">letters</span> = 
+                    <span class="txtCode">"0123456789ABCDEF";</span> <br>
+                    <span class="varfct enbsp">&nbsp;var</span> 
+                    <span class="nameObject">color</span> = 
+                    <span class="txtCode">"#";</span> <br><br>
+                    <span class="varfct enbsp">&nbsp;for</span>(
+                    <span class="txtCode">var i = 0; i < 6; i++ </span>) {<br>
+                    <span class="before enbsp-2">color 
+                    <span class="txtCode">+=</span> 
+                    <span class="nameObject">letters</span>[
+                    <span class="varfct">Math</span>.
+                    <span class="txtCode">floor</span>(
+                    <span class="varfct">Math</span>.
+                    <span class="txtCode">ramdom()</span> * 
+                    <span class="txtCode">16</span>)];</span><br>
+                    <span class="enbsp">&nbsp;};</span><br><br>
+                    <span class="varfct enbsp">&nbsp;return</span>
+                    <span class="nameObject"> color</span><br>
+                    &nbsp;};
+                </code>
+            </fieldset>
+            <hr>
+            <p>Adicionar nova div de cor aleatória</p>   
+            <div class="row" id="divColors">
+
+            </div>
+            <hr>
+            <p>Seu resultado:</p>   
+            <fieldset id="atv2">
+                &nbsp;
+            </fieldset>
+        </div>
+    </body>
+    <footer id="footer-unset">Resolução de Desafios de: Skylab Starter Rocketseat<hr></footer>
+    <script src="ex2.js"></script>
+</html>
