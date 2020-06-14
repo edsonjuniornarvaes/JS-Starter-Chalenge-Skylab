@@ -1,1 +1,1 @@
-# Resolução dos desafios de JS do módulo starter - Skylab Rocketseat.
+# Resolução dos desafios de JS do módulo Starter - Skylab Rocketseat.
