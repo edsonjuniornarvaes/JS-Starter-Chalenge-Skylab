@@ -19,21 +19,31 @@
 
         ul.textContent = ""
 
+        let li = document.createElement('li');
+        let txtLoad = document.createTextNode('Carregando...')
+        li.appendChild(txtLoad);
+        ul.appendChild(li);
+
         axios.get(`https://api.github.com/users/${user}/repos`)
             .then(function(response){    
+                ul.removeChild(li)
                 let acess = Object.values(JSON.parse(response.request.responseText));
                 acess.forEach(element => {
-                    let li = document.createElement('li');
+                    li = document.createElement('li');
                     let text = document.createTextNode(element.name)
                     li.appendChild(text);
                     ul.appendChild(li);
                 });
             })
-            .catch(function(){
-                let li = document.createElement('li');                
-                let txtEmpty = document.createTextNode("Usuário inexistente!")
-                li.appendChild(txtEmpty);
-                ul.appendChild(li);
+            .catch(function(error){
+                ul.removeChild(li)
+                if(error.response.status === 404){
+                    let li = document.createElement('li');                
+                    let txtEmpty = document.createTextNode("Usuário inexistente!")
+                    li.appendChild(txtEmpty);
+                    ul.appendChild(li);
+                }
+               
             })
 
     });
