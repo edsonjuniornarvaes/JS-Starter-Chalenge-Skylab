@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ex. 3° - Módulo 04 JS Assíncrono</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css"/>
+  </head>
+  <body id="myBody">
+    <div class="container">
+        <div class="title">
+            <h4>Skylab - (3° exercício) Módulo 04 | JS Assíncrono</h4>
+        </div>
+        <hr/>
+        <p>
+            - A partir do resultado do exemplo anterior adicione um indicador de carregamento em tela no lugar
+                da lista apenas enquanto a requisição estiver acontecendo:
+        </p>
+        <fieldset>
+            <code>
+                <span class="nameObject enbsp">< li ><span class="txtCode"> Carregando...</span>
+                <span class="nameObject">< /li ></li><br>
+            </code>
+        </fieldset>
+        <p>
+          - Além disso, adicione uma mensagem de erro em tela caso o usuário no Github não exista.
+        </p>
+        <p class="dica">
+          - Dica: Quando o usuário não existe, a requisição irá cair no .catch com código de erro 404.
+        </p>    
+        <hr>
+        <p>Buscar com nome de usuário pela api do Github</p>   
+        <div class="row" id="atv2">
+
+        </div>
+        <hr>
+        <p>Seu resultado:</p>
+        <fieldset class="row" id="div1">
+            &nbsp;
+        </fieldset>
+    </div>
+  </body>
+  <footer id="footer-unset">
+    Resolução de Desafios de: Skylab Starter Rocketseat
+    <hr />
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="ex3.js"></script>
+</html>
